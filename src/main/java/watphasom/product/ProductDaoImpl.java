@@ -37,8 +37,8 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product delete(Product product) {
-        product.setId(null);
         productRepository.delete(product);
+        product.setId(null);
         return product;
     }
 }
