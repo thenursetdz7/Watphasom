@@ -32,7 +32,7 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/product/{id}",method = RequestMethod.DELETE)
-    public @ResponseBody Product delete(@PathVariable("id")String id,@RequestBody Product product,BindingResult bindingResult) {
-        return productService.delete(id, product);
+    public Product delete(@PathVariable("id")String id) {
+        return productService.delete(id);
     }
 }

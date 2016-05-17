@@ -33,8 +33,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product delete(String id,Product product) {
-        product = productDao.getProduct(id);
-        return productDao.delete(product);
+    public Product delete(String id) {
+        Product p = productDao.getProduct(id);
+        return productDao.delete(p);
     }
 }

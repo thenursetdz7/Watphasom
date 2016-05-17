@@ -10,5 +10,5 @@ public interface ProductService {
     Product getProduct(String id);
     Product create(Product product);
     Product update(String id,Product product);
-    Product delete(String id,Product product);
+    Product delete(String id);
 }
